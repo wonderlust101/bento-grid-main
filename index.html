@@ -4,44 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Bento grid</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--Remove later-->
-    <style>
-        @font-face {
-            font-family: 'VT323';
-            src: url('assets/fonts/DotGothic16-Regular.ttf');
-        }
-
-        * {
-            font-family: 'VT323', sans-serif;
-            font-size: 120px;
-        }
-    </style>
-    <!--Remove later-->
 </head>
-<body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+<body class="landing-page">
+    <main class="landing-page__bento bento-grid">
+        <section class="landing-page__social-media-container">
+            <h1 class="landing-page__social-media-header">Social Media 
+                <span class="landing-page__social-media-header--yellow">10x</span>
+                <span class="landing-page__social-media-header--italics">Faster</span>
+                with AI
+            </h1>
+            
+            <div class="landing-page__social-media-text">
+                <img class="landing-page__social-media-stars" src="./assets/images/illustration-five-stars.webp" alt="" role="presentation">
+                <p>Over 4,000 5-star reviews</p>
+            </div>
+        </section>
 
-    <script src="assets/scripts/index.js"></script>
+        <section class="landing-page__multi-accounts-container">
+            <img class="landing-page__multi-accounts-img" src="./assets/images/illustration-multiple-platforms.webp" alt="" role="presentation">
+            <h3 class="landing-page__multi-accounts-header">Manage multiple accounts and platforms.</h3>
+        </section>
+
+        <section class="landing-page__consistent-schedule-container">
+            <h3>Maintain a consistent posting schedule.</h3>
+            <img class="landing-page__consistent-schedule-img" src="./assets/images/illustration-consistent-schedule.webp" alt="" role="presentation">
+        </section>
+
+        <section class="landing-page__schedule-posts-container">
+            <h3 class="landing-page__schedule-posts-text">Schedule to social media.</h3>
+            <img class="landing-page__schedule-posts-img" src="./assets/images/illustration-schedule-posts.webp" alt="" role="presentation">
+            <p class="landing-page__schedule-posts-text">Optimize post timings to publish content at the perfect time for your audience.</p>
+        </section>
+
+        <section class="landing-page__grow-followers-container">
+            <img class="landing-page__grow-followers-img" src="./assets/images/illustration-grow-followers.webp" alt="" role="presentation">
+            <h2 class="landing-page__grow-followers-text">Grow followers with non-stop content.</h2>
+        </section>
+
+        <section class="landing-page__audience-growth-container">
+            <div class="landing-page__audience-growth-text">
+                <h2 class="landing-page__audience-growth-header">>56%</h2>
+                <p>faster audience growth</p>
+            </div>
+            <img class="landing-page__audience-growth-img" src="./assets/images/illustration-audience-growth.webp" alt="" role="presentation">
+        </section>
+
+        <section class="landing-page__create-post-container">
+            <h2>Create and schedule content <span class="landing-page__create-post-text--purple">quicker.</span></h2>
+            <img class="landing-page__create-post-img" src="./assets/images/illustration-create-post.webp" alt="" role="presentation">
+        </section>
+
+        <section class="landing-page__ai-content-container">
+            <h2>Write your content using AI.</h2>
+            <img class="landing-page__ai-content-img" src="./assets/images/illustration-ai-content.webp" alt="" role="presentation">
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,38 @@
+@use '../abstract' as a;
+
+.bento-grid {
+  display: grid;
+  @include a.set-grid-areas(a, b, c, d, e, f, g, h);
+  gap: 2rem;
+
+  @include a.breakpoint(medium) {
+    grid-template: 
+      'a a'
+      'b c'
+      'd d'
+      'e e'
+      'f f'
+      'g h' max-content;
+  }
+  
+  @include a.breakpoint(large) {
+    grid-template: 
+      'g a a d' 1fr 
+      'g a a d' 1fr 
+      'g a a d' 1fr 
+      'g a a d' 1fr
+      'g b c d' 1fr
+      'h b c d' 1fr
+      'h b c d' 1fr
+      'h f e e' 1fr
+      'h f e e' 1fr
+      'h f e e' 1fr / 1fr 1fr 1fr 1fr;
+  }
+
+  & > * {
+    display: grid;
+    border-radius: 0.625rem;
+    position: relative;
+    overflow: hidden;
+  }
+}

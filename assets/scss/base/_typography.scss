@@ -2,5 +2,58 @@
 
 h1, h2, h3, h4,
 h5, h6, p {
+  font-family: 'DM Sans', sans-serif;
+}
 
+h1 {
+  font-size: 2.875rem;
+  font-weight: 500;
+  line-height: 2.625rem;
+  
+  @include a.breakpoint(medium) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  @include a.breakpoint(large) {
+    font-size: 3.875rem;
+    line-height: 3.625rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  letter-spacing: -0.12rem;
+
+  @include a.breakpoint(medium) {
+    font-size: 2.25rem;
+    line-height: 1.875rem;
+  }
+
+  @include a.breakpoint(large) {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.1rem;
+  }
+}
+
+h3 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.125rem;
+  
+  @include a.breakpoint(large) {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.1rem;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
 }

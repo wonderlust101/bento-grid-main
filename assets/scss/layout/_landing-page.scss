@@ -1,0 +1,249 @@
+@use '../abstract' as a;
+
+.landing-page {
+  display: grid;
+
+  & > * {
+    place-self: center;
+  }
+
+  &__bento {
+    margin: 2.5rem 0;
+    width: min(100% - 2rem * 2, 100rem);
+  }
+
+  &__social-media-container {
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+    color: var(--clr-white);
+    background-color: var(--clr-purple-500);
+
+    @include a.breakpoint(medium) {
+      padding: 4rem 8rem;
+    }
+    @include a.breakpoint(medium) {
+      padding: 4rem 6rem;
+    }
+  }
+
+  &__social-media-header {
+    text-align: center;
+
+    &--yellow {
+      color: var(--clr-yellow-500);
+    }
+
+    &--italics {
+      font-style: italic;
+    }
+  }
+
+  &__social-media-text {
+    display: grid;
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  &__social-media-stars {
+    width: 12rem;
+  }
+
+  &__multi-accounts-container {
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+
+    @include a.breakpoint(medium) {
+      padding: 1.5rem;
+    }
+  }
+
+  &__multi-accounts-img {
+    position: relative;
+    right: 0.5rem;
+
+    @include a.breakpoint(medium) {
+      width: 24rem;
+      max-width: unset;
+    }
+  }
+
+  &__multi-accounts-header {
+    max-width: 15rem;
+  }
+
+  &__consistent-schedule-container {
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--clr-black);
+    background-color: var(--clr-yellow-500);
+
+    @include a.breakpoint(medium) {
+      padding: 1.5rem;
+    }
+  }
+
+  &__consistent-schedule-img {
+    position: relative;
+    top: 2.5rem;
+    margin-top: -2.5rem;
+    width: 70%;
+
+    @include a.breakpoint(medium) {
+      top: 7rem;
+      margin-top: -7rem;
+      width: 100%;
+    }
+  }
+
+  &__schedule-posts-container {
+    gap: 1.5rem;
+    position: relative;
+    padding: 2rem;
+    color: var(--clr-black);
+    background-color: var(--clr-purple-100);
+    width: 100%;
+
+    @include a.breakpoint(medium) {
+      padding: 2rem 25%;
+    }
+
+    @include a.breakpoint(large) {
+      align-content: center;
+      padding: 2rem;
+    }
+  }
+
+  &__schedule-posts-text {
+    @include a.breakpoint(large) {
+      width: 50%;
+    }
+  }
+  
+  &__schedule-posts-img {
+    @include a.breakpoint(large) {
+      position: relative;
+      width: 28rem;
+      max-width: unset;
+    }
+  }
+
+  &__grow-followers-container {
+    justify-items: center;
+    gap: 2.5rem;
+    padding: 3rem;
+    text-align: center;
+    color: var(--clr-white);
+    background-color: var(--clr-purple-500);
+
+    @include a.breakpoint(medium) {
+      grid-template: 1fr / 1fr 1fr;
+      align-items: center;
+      justify-content: space-between;
+      justify-items: unset;
+      padding: 1.5rem 15%;
+    }
+    
+    @include a.breakpoint(large) {
+      padding: 1.5rem;
+    }
+  }
+
+  &__grow-followers-img {
+    @include a.breakpoint(medium) {
+      width: min(20rem, 100%);
+    }
+  }
+
+  &__grow-followers-text {
+    @include a.breakpoint(medium) {
+      text-align: left;
+    }
+  }
+
+  &__audience-growth-container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+
+    @include a.breakpoint(medium) {
+      grid-template: 1fr / 1fr max-content;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    @include a.breakpoint(large) {
+      grid-template: 1fr 1fr / 1fr;
+    }
+  }
+
+  &__audience-growth-text {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__audience-growth-header {
+    font-size: 2.875rem;
+    line-height: 2.625rem;
+
+    @include a.breakpoint(medium) {
+      font-size: 3.375rem;
+      line-height: 3rem;
+    }
+
+    @include a.breakpoint(medium) {
+      font-size: 3.875rem;
+      line-height: 3.625rem;
+    }
+  }
+
+  &__audience-growth-img {
+    width: 12rem;
+    
+    @include a.breakpoint(large) {
+      width: 100%;
+    }
+  }
+
+  &__create-post-container {
+    gap: 1.5rem;
+    padding: 2rem;
+    color: var(--clr-black);
+    background-color: var(--clr-yellow-100);
+
+    @include a.breakpoint(medium) {
+      align-content: center;
+    }
+  }
+
+  &__create-post-text {
+    &--purple {
+      color: var(--clr-purple-500);
+    }
+  }
+
+  &__create-post-img {
+    width: 60%;
+
+    @include a.breakpoint(large) {
+      width: 100%;
+    }
+  }
+
+  &__ai-content-container {
+    gap: 1.5rem;
+    padding: 2rem;
+    color: var(--clr-black);
+    background-color: var(--clr-yellow-500);
+  }
+
+  &__ai-content-img {
+    width: 80%;
+
+    @include a.breakpoint(large) {
+      width: 100%;
+    }
+  }
+}
